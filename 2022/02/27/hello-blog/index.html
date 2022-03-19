@@ -5,9 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="blog与心湖, Hexo">
-    <meta name="description" content="2022.2.28日，动笔写下了第一篇博客。
-自己的记性并不好，脑海中却总是反刍一些旧事，躺在床上在想，走在路上在想，想来想去却最后又忘，总觉得很多东西不应该那么消散，一些东西写了下来就能够
-">
+    <meta name="description" content="试一试">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -34,6 +32,16 @@
 
 <meta name="generator" content="Hexo 6.0.0"></head>
 
+
+
+   <style>
+    body{
+       background-image: url(https://www.pexels.com/zh-cn/photo/355465/);
+       background-repeat:no-repeat;
+       background-size: 100% 100%;
+       background-attachment:fixed;
+    }
+</style>
 
 
 
@@ -793,49 +801,49 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/GamblerBlog.github.io/2022/02/27/hello-blog/">
+                <a href="/GamblerBlog.github.io/2022/02/20/yaml%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E4%BB%8B%E7%BB%8D/">
                     <div class="card-image">
                         
-                        <img src="/GamblerBlog.github.io/medias/featureimages/16.jpg" class="responsive-img" alt="blog与心湖">
                         
-                        <span class="card-title">blog与心湖</span>
+                        <img src="/GamblerBlog.github.io/medias/featureimages/11.jpg" class="responsive-img" alt="yaml基本语法介绍">
+                        
+                        <span class="card-title">yaml基本语法介绍</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            对yaml语法进行初步学习
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-27
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-20
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/GamblerBlog.github.io/categories/%E9%9A%8F%E7%AC%94/" class="post-category">
-                                    随笔
+                            <a href="/GamblerBlog.github.io/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
+                                    技术
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/GamblerBlog.github.io/tags/%E5%BF%83%E6%B9%96/">
-                        <span class="chip bg-color">心湖</span>
+                    <a href="/GamblerBlog.github.io/tags/%E5%89%8D%E7%AB%AF/">
+                        <span class="chip bg-color">前端</span>
                     </a>
                     
-                    <a href="/GamblerBlog.github.io/tags/hello-blog/">
-                        <span class="chip bg-color">hello blog</span>
+                    <a href="/GamblerBlog.github.io/tags/%E5%8D%9A%E5%AE%A2/">
+                        <span class="chip bg-color">博客</span>
                     </a>
                     
                 </div>
@@ -894,7 +902,7 @@
             contentSelector: '#articleContent',
             headingsOffset: -($(window).height() * 0.4 - 45),
             collapseDepth: Number('0'),
-            headingSelector: 'h2, h3, h4'
+            headingSelector: 'h1, h2, h3, h4'
         });
 
         // modify the toc link href to support Chinese.
@@ -906,7 +914,7 @@
 
         // modify the heading title id to support Chinese.
         i = 0;
-        $('#articleContent').children('h2, h3, h4').each(function () {
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
             $(this).attr('id', tocHeading + (++i));
         });
 

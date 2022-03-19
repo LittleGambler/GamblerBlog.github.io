@@ -34,6 +34,16 @@
 
 
 
+   <style>
+    body{
+       background-image: url(https://www.pexels.com/zh-cn/photo/355465/);
+       background-repeat:no-repeat;
+       background-size: 100% 100%;
+       background-attachment:fixed;
+    }
+</style>
+
+
 
 <body>
     <header class="navbar-fixed">
@@ -352,16 +362,14 @@
                     var typed = new Typed("#subtitle", {
                         strings: [ 
                             
-                                "从来没有真正的绝境, 只有心灵的迷途",
-                            
-                                "Never really desperate, only the lost of the soul",
+                                "欢迎来到赌徒的博客",
                             
                         ],
                         startDelay: 300,
                         typeSpeed: 100,
-                        loop: true,
+                        loop: false,
                         backSpeed: 50,
-                        showCursor: true
+                        showCursor: false
                     });
                 </script>
                 
@@ -372,9 +380,7 @@
 
 
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/GamblerBlog.github.io/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    $('.bg-cover').css('background-image', 'url(/GamblerBlog.github.io/medias/banner/0.jpg)');
 </script>
 
 
@@ -394,11 +400,11 @@
             <div class="tag-chips">
                 
                 
-                <a href="/GamblerBlog.github.io/tags/%E5%BF%83%E6%B9%96/" title="心湖: 1">
+                <a href="/GamblerBlog.github.io/tags/%E5%BF%83%E6%B9%96/" title="心湖: 3">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
                             data-tagname="心湖" style="background-color: #F9EBEA;">心湖
-                        <span class="tag-length">1</span>
+                        <span class="tag-length">3</span>
                     </span>
                 </a>
                 
@@ -416,6 +422,42 @@
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
                             data-tagname="春招" style="background-color: #D5F5E3;">春招
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/GamblerBlog.github.io/tags/%E5%BF%83%E7%90%86%E5%AD%A6/" title="心理学: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="心理学" style="background-color: #E8F8F5;">心理学
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/GamblerBlog.github.io/tags/%E5%89%8D%E7%AB%AF/" title="前端: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="前端" style="background-color: #FEF9E7;">前端
+                        <span class="tag-length">2</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/GamblerBlog.github.io/tags/%E5%8D%9A%E5%AE%A2/" title="博客: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="博客" style="background-color: #F8F9F9;">博客
+                        <span class="tag-length">2</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/GamblerBlog.github.io/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" title="面向对象: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="面向对象" style="background-color: #82E0AA;">面向对象
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -444,7 +486,7 @@
 <script type="text/javascript">
     
 
-    $('#tag-wordcloud').jQCloud([{"text":"心湖","weight":1,"link":"/GamblerBlog.github.io/tags/心湖/"},{"text":"hello blog","weight":1,"link":"/GamblerBlog.github.io/tags/hello-blog/"},{"text":"春招","weight":1,"link":"/GamblerBlog.github.io/tags/春招/"}], {
+    $('#tag-wordcloud').jQCloud([{"text":"心湖","weight":3,"link":"/GamblerBlog.github.io/tags/心湖/"},{"text":"hello blog","weight":1,"link":"/GamblerBlog.github.io/tags/hello-blog/"},{"text":"春招","weight":1,"link":"/GamblerBlog.github.io/tags/春招/"},{"text":"心理学","weight":1,"link":"/GamblerBlog.github.io/tags/心理学/"},{"text":"前端","weight":2,"link":"/GamblerBlog.github.io/tags/前端/"},{"text":"博客","weight":2,"link":"/GamblerBlog.github.io/tags/博客/"},{"text":"面向对象","weight":1,"link":"/GamblerBlog.github.io/tags/面向对象/"}], {
         autoResize: true
     });
 </script>
